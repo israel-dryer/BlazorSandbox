@@ -25,11 +25,11 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-VhaSfzg\/K8lTOnI\/BVVCFQdDG4tLTq4B5YihhKvMzz8=",
+      "hash": "sha256-SainYX8bG1InXAkmGJCHJKuBIkGss2Kt6xaiJi8StiM=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-Ak9pd9Yn+4RHqywQTMzsqVhOsnZxbq2jaqyjy2nLV2U=",
+      "hash": "sha256-xO0eAI8GGg+7S+Y89KyGOVg8y2mexJDMVTod56sX5aI=",
       "url": "_framework\/BlazorSandbox.dll"
     },
     {
@@ -213,7 +213,7 @@
       "url": "index.html"
     },
     {
-      "hash": "sha256-jQz0Vt1MuoWqSwnie3mqJ2WdEOeLb4yBKI11WXazFLc=",
+      "hash": "sha256-4Pz\/nOTvgLEoOgVvF6weTZVDuSdiwHEfTanT0Pexi4s=",
       "url": "js\/facedetection.js"
     },
     {
@@ -225,5 +225,5 @@
       "url": "manifest.json"
     }
   ],
-  "version": "GY\/JEtaw"
+  "version": "vxbC3BQx"
 };
