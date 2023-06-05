@@ -1,9 +1,4 @@
-﻿//var model = faceDetection.SupportedModels.MediaPipeFaceDetector;
-//var detectorConfig = { runtime: 'tfjs', maxFaces: 10, modelType: 'short' };
-//var detector = faceDetection.createDetector(model, detectorConfig);
-
-
-async function findFaces(src, dst, facesDetected) {
+﻿async function findFaces(src, dst, facesDetected) {
     const video = document.getElementById(src);
     const result = document.getElementById(facesDetected);
 
@@ -27,11 +22,17 @@ async function findFaces(src, dst, facesDetected) {
 async function markFacesOnImage(src, dst, faces) {
     video = document.getElementById(src);
     canvas = document.getElementById(dst);
-    if (canvas == null) { return; }
+
+    // update the size based on the video dimensions
+    video.width = video.videoWidth;
+    video.height = video.videoHeight;
+    canvas.height = video.videoHeight;
+    canvas.width = video.videoWidth;
 
     context = canvas.getContext('2d');
-
-    context.drawImage(video, 0, 0, canvas.width, canvas.height);
+    context.translate(video.videoWidth, 0);
+    context.scale(-1, 1);
+    context.drawImage(video, 0, 0, video.videoWidth, video.videoHeight);
     context.strokeStyle = 'red'
     context.lineWidth = 3;
 
